@@ -1,0 +1,16 @@
+nav li{
+    list-style: none;
+    display: inline;
+}
+
+nav li:hover{
+    background-color: rgb(231, 123, 35);
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+}
