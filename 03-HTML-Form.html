@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Form</title>
+    <style>
+        .basic-info label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- form -->
+    <!-- label -->
+    <!-- label attribute -->
+    <!-- for -->
+    <!-- work: Input field কে label-এর সাথে link করা -->
+    <!-- input -->
+                                        <!-- input attribute -->
+    <!-- type -->
+    <!-- work: Input field-এর ধরনের নির্ধারণ -->
+
+    <!-- name -->
+    <!-- work: Form data identify করার জন্য, যখন form submit করা হয়, তখন browser এই name ব্যবহার করে data কে key-value pair আকারে পাঠায়। 
+    example: <input type="text" name="username">, যখন form submit করা হয়, তখন browser এই input field-এর value কে "username" key এর সাথে পাঠায়। 
+
+    User যদি John লিখে submit করে, server এ যাবে:
+    username=John -->
+
+    <!-- id -->
+    <!-- 1. Label-এর সাথে link করার জন্য 2. CSS styling-এর জন্য 3. JavaScript access / manipulation-এর জন্য -->
+    
+    <!-- value -->
+    <!-- work: Input field-এর default value নির্ধারণ, যখন form submit করা হয়, তখন এই value data হিসেবে পাঠানো হয়। -->
+
+    <!-- fieldset -->
+    <!-- work:1. Form এর input গুলোকে group করা 2.একই ধরনের তথ্য আলাদা করে দেখানো   -->
+
+    <!-- legend -->
+    <!-- work: fieldset এর title হিসেবে কাজ করে -->
+    
+    <!-- radio -->
+    <!-- Work: 1.User কে একাধিক option দেখানো 2.কিন্তু একই group থেকে শুধু ১টি option select করা যায়  -->
+    
+    <!-- checkbox -->
+    <!-- Work: 1.User কে একাধিক option দেখানো 2.একই group থেকে একাধিক option select করা যায়  -->
+    
+
+    <!-- console value check -->
+    <!-- document.querySelector('input[name="pitha"]:checked').value -->
+     
+    <header>
+
+    </header>
+    
+    <main>
+        <section>
+        <h2>kalvin Mother Pitha Ghor</h2>
+        <form>
+            <fieldset class="basic-info">
+                <legend>Your Info</legend>
+                <label for="name">Your Name:</label>
+            <input type="text" name="username" id="name">
+
+            <label for="email">Your Email:</label>
+            <input type="email" name="userEmail" id="email">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Pitha Info</legend>
+
+                <input type="radio" name="pitha" value="Chitoy" id="chitoy">
+                <label for="chitoy">Chitoy</label>
+                <input type="radio" name="pitha" value="Bhapa" id="bhapa">
+                <label for="bhapa">Bhapa</label>
+                <input type="radio" name="pitha" value="Dal-Puri" id="Dal-puri">
+                <label for="Dal-puri">Dal-Puri</label>
+
+                <!-- name = radio button গুলোকে group করা + server এ data পাঠানোর field name। -->
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Vorta Selection</legend>
+
+                <input type="checkbox" name="vorta" value="Sorisa" id="sorisa">
+                <label for="sorisa">Sorisa</label>
+                <input type="checkbox" name="vorta" value="Begun" id="Begun">
+                <label for="Begun">Begun</label>
+                <input type="checkbox" name="vorta" value="Sutki" id="sutki">
+                <label for="sutki">Sutki</label>
+                <input type="checkbox" name="vorta" value="Morich" id="Morich">
+                <label for="Morich">Morich</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extra info</legend>
+                <textarea cols="40" rows="5" name="" id=""></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        
+        </form>
+    </section>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
