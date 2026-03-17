@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEX LAYOUT</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+             /* justify-content: space-evenly; */
+        }
+        .container div{
+            border:2px solid red;
+            height: 30px;
+            width: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .box{
+            border: 1px solid rgb(201, 211, 18);
+            background-color: lightcoral;
+            height:50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <div class="card-container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+        <div class="box">box-6</div>
+        <div class="box">box-7</div>
+        <div class="box">box-8</div>
+        <div class="box">box-9</div>
+        <div class="box">box-10</div>
+        <div class="box">box-11</div>
+        <div class="box">box-12</div>
+    </div>
+</body>
+</html>
