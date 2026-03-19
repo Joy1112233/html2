@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizontal & Vertical Center Using Flex</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* align-items:flex-end; */
+            /* align-items: flex-start; */
+            align-items: stretch;
+            background-color: aquamarine;
+            height: 800px;
+        }
+        .box{
+            background-color: rgb(133, 89, 7);
+            /* height: 300px; */
+            font-size: 4em;
+            width: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px 100px 5px 100px;
+        }
+
+        /* .hello{
+            background-color:chartreuse;
+            width: 100%;
+            max-width: 1200px;
+            min-width: 800px;
+        } */
+
+        .auto{
+            background-color: rgb(218, 78, 78);
+        }
+
+        .content{
+            background-color: royalblue;
+            max-width: 1000px;
+            font-size: 2em;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: justify;
+        }
+
+    </style>
 </head>
 <body>
+    <!-- Horizontal Center -- X -->
+    <!-- Vertical Center -- Y -->
+    <!-- automatic Center -->
+    <!-- width -->
+    <!-- width দিয়ে তুমি একটা element-এর fixed width সেট করো। -->
+
+    <!-- max-width -->
+    <!-- max-width দিয়ে তুমি বলো: এই size এর বেশি বড় হবে না -->
+
+    <!-- min-width -->
+    <!-- min-width দিয়ে তুমি বলো: এই size এর কম ছোট হবে না -->
+    
+
+    <!-- Horizontal Center & Vertical Center -->
+    <!-- <div class="container">
+        <div class="box">
+            <p>Something</p>
+        </div>
+    </div> -->
+    
+
+    <!-- width, max-width, min-width -->
+    
+    <!-- <div class="hello">
+        <h2>Hello</h2>
+    </div> -->
+
+    <!-- Automatic Center -->
+    <div class="auto">
+        <div class="content">
+            <h2>My website content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quod dolorum debitis consectetur provident delectus, maiores, omnis eius temporibus incidunt similique ipsam quia vero praesentium, facilis ab atque? A itaque expedita sapiente. Vitae, recusandae dolorem expedita officiis autem repudiandae maxime quis alias ipsam delectus voluptates sequi repellendus odio! Repellendus, quos.</p>
+        </div>
+    </div>
     
 </body>
 </html>
