@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+    <style>
+        button{
+            background-color: blueviolet;
+            padding: 8px 5px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        /* button:hover{
+            background-color: rgb(247, 12, 12);
+            color: black;
+            box-shadow: 5px 5px 10px black;
+        } */
+        
+        button:active{
+            background-color: rgb(247, 12, 12);
+            color: black;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        input{
+            padding: 5px;
+            border: 2px solid blueviolet;
+            outline: none;
+        }
+
+        input:focus{
+            background-color: rgb(58, 37, 77);
+            border: 2px solid rgb(224, 8, 8);
+            color: aliceblue;
+            border-radius: 5px;
+        }
+
+
+        nav li{
+            list-style: none;
+            display:inline;
+        }
+
+    /* ul li:first-child a{
+        background-color: red;
+        color: white;
+       } */
+    /* nav ul li:last-child a{
+        background-color: blue;
+        color: white;
+    } */
+
+    nav ul li:nth-child(even) a{
+        color: red;
+    }
+
+    nav ul li:nth-child(odd) a{
+        color: yellowgreen;
+    }
+
+    /* Pseudo Element */
+    p::first-letter{
+        color: red;
+    }
+
+    p::first-line{
+        color: blue;
+    }
+
+    h2::before{
+        content: "My Name is ";
+    }
+
+    h2::after{
+        content: "Debnath";
+    }
+
+            
+    </style>
+</head>
+<body>
+    <!-- Pseudo-class কি? -->
+    <!-- Pseudo-class ব্যবহার করা হয় যখন কোনো element-এর special state বোঝাতে হয়। -->
+    <!-- :hover → mouse গেলে -->
+    <!-- :active → click করার সময় -->
+    <!-- :focus → input select করলে -->
+    <!-- :first-child → প্রথম child element -->
+
+
+    <!-- Pseudo-element কি? -->
+    <!-- Pseudo-element দিয়ে element-এর specific অংশে style দেওয়া হয় -->
+    <!-- ::first-letter → প্রথম অক্ষর বড় হবে -->
+    <!-- ::before → element-এর আগে content যোগ করে -->
+    <!-- ::after → element-এর পরে content যোগ করে -->
+    <!-- ::first-line → প্রথম লাইন style করে -->
+    
+
+    <!-- Example for Pseudo Class -->
+    <button>Click Me</button>
+
+    <input type="text" placeholder="Enter Your Name">
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Example For Pseudo Element -->
+    <p>HyperText Markup Language. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quae eligendi sequi laborum possimus nostrum sunt esse asperiores nobis accusantium. Sed suscipit obcaecati nesciunt fugiat iusto eveniet quaerat blanditiis dignissimos?</p>
+
+    <h2>Joy</h2>
+    
+    
+
+    
+</body>
+</html>
