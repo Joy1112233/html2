@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Position</title>
+
+    <style>
+        
+        body{
+            margin-top: 50px;
+        }
+        /* .swim-container{
+            position: relative;
+            border: 2px solid green;
+
+        } */
+        .box{
+            border: 1px solid red;
+            width: 300px;
+        }
+
+        .box img{
+            height: 300px;
+            width: 300px;
+        }
+
+        /* .ring {
+            position:relative;
+            left: 45px;
+            bottom: 130px;
+        } */
+        
+        /* .ring{
+            position: absolute;
+            top: 50px;
+            left: 70px;
+        } */
+
+        /* .ring{
+            position: sticky;
+            top: 0px;
+        } */
+
+        .dummy{
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgb(109, 76, 76);
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        nav li{
+            list-style: none;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- HTML Position -->
+    <!-- static -->
+    <!-- এটা সব element এর default position। -->
+    
+    <!-- relative -->
+    <!-- নিজের original জায়গা থেকে move করতে পারো। -->
+    <!-- relative → নিজ জায়গা থেকে সরানো -->
+    
+    <!-- absolute -->
+    <!-- absolute ব্যবহার করলে কোনো element-কে normal flow থেকে বের করে দেওয়া হয় এবং সেটাকে নির্দিষ্ট জায়গায় বসানো যায়। -->
+    
+    <!-- absolute element সবসময় nearest positioned parent (relative/absolute/fixed) এর উপর নির্ভর করে -->
+
+    <!-- যদি parent-এ position না থাকে → তাহলে এটা body অনুযায়ী position নেয় -->
+    
+    <!-- absolute → পুরোপুরি স্বাধীনভাবে বসানো -->
+    
+    <!-- sticky -->
+    <!-- প্রথমে element normal flow-এ থাকে -->
+    <!-- কিন্তু scroll করলে নির্দিষ্ট জায়গায় গিয়ে fixed হয়ে যায় -->
+    
+    <!-- top, left, right, বা bottom দিতে হবে না দিলে sticky কাজ করবে না -->
+    
+    <!-- fixed -->
+    <!-- যেটা screen (viewport)-এর সাথে fixed থাকে — scroll করলেও এর position পরিবর্তন হয় না। -->
+    <!-- এটা viewport অনুযায়ী position নেয় (parent না) -->
+    <!-- top, bottom, left, right দিয়ে জায়গা ঠিক করতে হয় -->
+    <!-- Example : Floating button (যেমন: "Back to Top"), Chat icon (Messenger button),Fixed navbar,Help/support button -->
+    
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Me</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </nav>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At explicabo praesentium quos excepturi fugiat sed ad! Id qui ex fuga cum deserunt voluptatibus facere consectetur aut, temporibus amet. Animi, cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum nulla corporis harum officiis repudiandae. Perferendis itaque vero molestias ducimus soluta recusandae quibusdam minima animi, aspernatur non, totam magnam corporis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, vitae est veritatis doloribus odio ipsa incidunt ad numquam architecto quis nostrum pariatur explicabo in soluta corporis eveniet, officiis ipsam quidem?</p>
+
+    <div class="swim-container">
+        <div class="box boy">
+            <img src="/position/boy-removebg-preview.png" alt="">
+        </div>
+        <div class="box ring">
+            <img src="/position/ring-removebg-preview.png" alt="">
+        </div>
+        <div class="box water">
+            <img src="/position/water-removebg-preview.png" alt="">
+        </div>
+
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+
+</body>
+</html>
