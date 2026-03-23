@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index in CSS</title>
+    
+    <style>
+        .box{
+
+            position: relative;
+        }
+
+        .boy{
+            z-index: 10;
+        }
+        .ring{
+            top:-230px;
+            z-index: 9;
+        }
+
+        .water{
+            top: -590px;
+            left: -70px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- CSS Z-Index -->
+    <!-- z-index দিয়ে তুমি কোন element সামনে থাকবে আর কোনটা পেছনে থাকবে সেটা control করতে পারো -->
+    
+    <!-- z-index কাজ করবে তখনই, যখন: position থাকে (relative, absolute, fixed, sticky) -->
+
+
+
+    <div class="swim-container">
+        <div class="box boy">
+            <img src="/position/boy.png" alt="">
+        </div>
+        <div class="box ring">
+            <img src="/position/ring.png" alt="">
+        </div>
+        <div class="box water">
+            <img src="/position/water.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
